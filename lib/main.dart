@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:neumorphism_widgets/widgets/card.dart';
+import 'package:neumorphism_widgets/widgets/neu_clock.dart';
 import 'package:neumorphism_widgets/widgets/neu_icon_button.dart';
 
 void main() {
@@ -42,7 +43,11 @@ class HomePage extends StatelessWidget {
             SizedBox(
               height: 50,
             ),
-            NeuIconButton(),
+            // NeuIconButton(),
+            SizedBox(
+              height: 50,
+            ),
+            Clock()
           ],
         ),
       ),
