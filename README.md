@@ -17,7 +17,7 @@
 
 ## Analog Clock
 <p align="left">
-  <img src="https://github.com/Muntasir89/Neumorphism/assets/78687005/38e40abe-5e8e-4526-80a7-e01da4322c58" alt="clock" width="270" height="600" />
+  <img src="https://github.com/Muntasir89/Neumorphism/assets/78687005/8e58c375-4440-4843-9605-a66ee5543248" alt="clock" width="270" height="600" />
 </p>
 
 
