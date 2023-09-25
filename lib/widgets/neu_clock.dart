@@ -27,6 +27,7 @@ class _ClockState extends State<Clock> {
       child: Stack(
         alignment: Alignment.center,
         children: [
+          // First Circle
           Container(
             constraints: BoxConstraints.expand(),
             decoration: BoxDecoration(
@@ -49,6 +50,7 @@ class _ClockState extends State<Clock> {
                       offset: Offset(-20, -10))
                 ]),
           ),
+          // Second Circle
           Container(
             width: 200,
             height: 200,

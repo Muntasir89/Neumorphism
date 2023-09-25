@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:neumorphism_widgets/widgets/card.dart';
+import 'package:neumorphism_widgets/widgets/card/card.dart';
 import 'package:neumorphism_widgets/widgets/neu_clock.dart';
 import 'package:neumorphism_widgets/widgets/neu_icon_button.dart';
+import 'package:neumorphism_widgets/widgets/neu_switch/neu_switch.dart';
+
+import 'widgets/neu_animated_listview.dart';
 
 void main() {
   runApp(const MyApp());
@@ -31,23 +34,27 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
-        title: Text("Neumorphism widgets"),
+        title: Text("Neumorphism Switch"),
       ),
       body: Center(
         child: Column(
           children: [
-            SizedBox(
-              height: 20,
-            ),
+            // SizedBox(
+            //   height: 20,
+            // ),
             // NeuCard(),
-            SizedBox(
-              height: 50,
-            ),
+            // SizedBox(
+            //   height: 50,
+            // ),
             // NeuIconButton(),
+            // SizedBox(
+            //   height: 50,
+            // ),
+            // Clock(),
             SizedBox(
               height: 50,
             ),
-            Clock()
+            NeuSwitch()
           ],
         ),
       ),
