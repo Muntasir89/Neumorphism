@@ -24,3 +24,8 @@
 <p align="left">
   <img src="https://github.com/Muntasir89/Neumorphism/assets/78687005/0543e74f-8ff2-470b-a62d-36be24da9301" alt="clock" width="270" height="600" />
 </p>
+
+## AnimatedList 
+<p align="left">
+  <img src="https://github.com/Muntasir89/Neumorphism/assets/78687005/85ffdaed-6970-4d2e-97c2-50292e91780f" alt="clock" width="270" height="600" />
+</p>
