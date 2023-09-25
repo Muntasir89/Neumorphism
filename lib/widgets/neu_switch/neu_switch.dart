@@ -34,26 +34,30 @@ class NeuSwitch extends StatelessWidget {
                     spreadRadius: 1.0,
                     inset: true),
               ]),
-          alignment: _isActive ? Alignment.centerRight : Alignment.centerLeft,
-          child: Container(
-            height: 40,
-            width: 40,
-            decoration: BoxDecoration(
-                color: Colors.grey[200],
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: [
-                  BoxShadow(
-                      color: Colors.white,
-                      offset: Offset(2.0, 2.0),
-                      blurRadius: 3,
-                      spreadRadius: 1.0),
-                  BoxShadow(
-                      color: Color(0xFF757575),
-                      offset: Offset(2.0, 2.0),
-                      blurRadius: 3,
-                      spreadRadius: 1.0),
-                ]),
-          ),
+          child: AnimatedAlign(
+            alignment: _isActive ? Alignment.centerRight : Alignment.centerLeft,
+            duration: const Duration(seconds: 1),
+            curve: Curves.fastOutSlowIn,
+            child: Container(
+              height: 40,
+              width: 40,
+              decoration: BoxDecoration(
+                  color: Colors.grey[200],
+                  borderRadius: BorderRadius.circular(20),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.white,
+                        offset: Offset(2.0, 2.0),
+                        blurRadius: 3,
+                        spreadRadius: 1.0),
+                    BoxShadow(
+                        color: Color(0xFF757575),
+                        offset: Offset(2.0, 2.0),
+                        blurRadius: 3,
+                        spreadRadius: 1.0),
+                  ]),
+            ),
+          ), //_isActive ? Alignment.centerRight : Alignment.centerLeft
         ),
       );
     });
