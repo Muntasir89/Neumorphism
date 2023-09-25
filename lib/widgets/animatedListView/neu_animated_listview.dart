@@ -85,6 +85,7 @@ class _NeuAnimatedListViewState extends State<NeuAnimatedListView> {
                               style: const TextStyle(fontSize: 20),
                             ),
                             subtitle: Text("every day fazar salat"),
+                            // trailing: ,
                             trailing: IconButton(
                               icon: const Icon(Icons.delete),
                               onPressed: () {

@@ -4,7 +4,7 @@ import 'package:neumorphism_widgets/widgets/neu_clock.dart';
 import 'package:neumorphism_widgets/widgets/neu_icon_button.dart';
 import 'package:neumorphism_widgets/widgets/neu_switch/neu_switch.dart';
 
-import 'widgets/neu_animated_listview.dart';
+import 'widgets/animatedListView/neu_animated_listview.dart';
 
 void main() {
   runApp(const MyApp());
