@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:neumorphism_widgets/widgets/card/card.dart';
 import 'package:neumorphism_widgets/widgets/neu_clock.dart';
 import 'package:neumorphism_widgets/widgets/neu_icon_button.dart';
-import 'package:neumorphism_widgets/widgets/neu_switch/neu_switch.dart';
+import 'package:neumorphism_widgets/widgets/animatedListView/neu_switch/neu_switch.dart';
 
 import 'widgets/animatedListView/neu_animated_listview.dart';
 
@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: HomePage(),
+      home: NeuAnimatedListView(),
     );
   }
 }

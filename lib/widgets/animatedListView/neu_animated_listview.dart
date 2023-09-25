@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
+import 'package:neumorphism_widgets/widgets/animatedListView/alarm_icon/alarm_icon.dart';
+import 'package:neumorphism_widgets/widgets/animatedListView/neu_switch/neu_switch.dart';
 
 class NeuAnimatedListView extends StatefulWidget {
-  const NeuAnimatedListView({super.key});
-
   @override
   State<NeuAnimatedListView> createState() => _NeuAnimatedListViewState();
 }
 
 class _NeuAnimatedListViewState extends State<NeuAnimatedListView> {
   final _items = [];
+
   final GlobalKey<AnimatedListState> _key = GlobalKey();
 
   void _addItem() {
@@ -63,35 +64,31 @@ class _NeuAnimatedListViewState extends State<NeuAnimatedListView> {
                       sizeFactor: animation,
                       child: Container(
                         margin: const EdgeInsets.all(10),
-                        decoration: BoxDecoration(boxShadow: [
-                          BoxShadow(
-                              color: Colors.grey.shade500,
-                              offset: Offset(4.0, 4.0),
-                              blurRadius: 5.0,
-                              spreadRadius: 1.0),
-                          BoxShadow(
-                              color: Colors.white,
-                              offset: Offset(-4.0, -4.0),
-                              blurRadius: 5.0,
-                              spreadRadius: 1.0),
-                        ]),
-                        child: Container(
-                          color: Colors.grey.shade300,
+                        decoration: BoxDecoration(
+                            shape: BoxShape.rectangle,
+                            borderRadius: BorderRadius.circular(15),
+                            boxShadow: [
+                              BoxShadow(
+                                  color: Colors.grey.shade500,
+                                  offset: Offset(4.0, 4.0),
+                                  blurRadius: 5.0,
+                                  spreadRadius: 1.0),
+                              BoxShadow(
+                                  color: Colors.white,
+                                  offset: Offset(-4.0, -4.0),
+                                  blurRadius: 5.0,
+                                  spreadRadius: 1.0),
+                            ]),
+                        child: Card(
                           child: ListTile(
-                            leading: Icon(Icons
-                                .notifications_active_outlined), // otherwise notification_off_outline
+                            leading:
+                                AlarmIcon(), // otherwise notification_off_outline
                             title: Text(
                               _items[index],
                               style: const TextStyle(fontSize: 20),
                             ),
                             subtitle: Text("every day fazar salat"),
-                            // trailing: ,
-                            trailing: IconButton(
-                              icon: const Icon(Icons.delete),
-                              onPressed: () {
-                                _removeItem(index);
-                              },
-                            ),
+                            trailing: NeuSwitch(),
                           ),
                         ),
                       ),

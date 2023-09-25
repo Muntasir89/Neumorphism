@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart' hide BoxDecoration, BoxShadow;
 import 'package:flutter_inset_box_shadow/flutter_inset_box_shadow.dart';
+import 'package:neumorphism_widgets/widgets/animatedListView/neu_animated_listview.dart';
 
 class NeuSwitch extends StatelessWidget {
   bool _isActive = false;
+  NeuAnimatedListView neuAnimatedListView = NeuAnimatedListView();
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +16,8 @@ class NeuSwitch extends StatelessWidget {
           });
         },
         child: Container(
-          height: 44,
-          width: 70,
+          height: 24,
+          width: 45,
           padding: EdgeInsets.symmetric(horizontal: 2),
           decoration: BoxDecoration(
               color: _isActive ? Colors.red : Color(0xFFE3E3E3),
@@ -39,10 +41,10 @@ class NeuSwitch extends StatelessWidget {
             duration: const Duration(seconds: 1),
             curve: Curves.fastOutSlowIn,
             child: Container(
-              height: 40,
-              width: 40,
+              height: 20,
+              width: 20,
               decoration: BoxDecoration(
-                  color: Colors.grey[200],
+                  color: Colors.white,
                   borderRadius: BorderRadius.circular(20),
                   boxShadow: [
                     BoxShadow(
